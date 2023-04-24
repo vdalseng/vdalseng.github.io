@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Melbo Sko AS</title>
+        <link rel="stylesheet" type="text/css" href="felles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <header>
+        <!--Info om netthandel hos Melbo Sko AS-->
+        <div class="netthandel-info">
+            <ul>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png">Trygg Handel og Rask Levering</b></li>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png">Personlig Service</b></li>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png">30 Dagers Åpent Kjøp</b></li>
+            </ul>
+        </div>
+    </header>
+    <!--------------------------------->
+            <!--Navigasjonsbar-->
+    <!--------------------------------->
+    <nav>
+        <div class="nav-innhold">
+            <div class="top-nav">
+                <!--Logo-->
+                <div>
+                    <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
+                </div>
+                <!--Øvre del av Navigasjonsbaren-->
+                <!--Login-Ønskeliste-Handlekurv-->
+                <div>
+                    <ul class="login-onskeliste-handlekurv">
+                        <li><a href="login.html"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
+                    </ul>
+                </div>
+                <!--Søkefelt-->
+                <div class="searchbar">
+                    <form action="#">
+                        <input id="searchbar" onkeyup="search_product()" type="text" placeholder="Søk..." name="search">
+                        <button class="fa fa-search" style="float:right;"></button>
+                    </form>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="home.html">Forside</a>
+                        <a href="about.html">Om oss</a>
+                        <a href="blog.html">Blogg</a>
+                        <a href="#">Login</a>
+                        <a href="#">Ønskeliste</a>
+                        <a href="#">Handlekurv</a>
+                    </div>
+                </div>
+                <div class="burger-btn">
+                    <span onclick="openNav()">&#9776;</span>
+                    <script src="burger-meny.js"></script>
+                </div>
+            </div>
+            <!--Nedre del av Navigasjonsbaren-->
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="home.html">Forside</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="blog.html">Blogg</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filter for desktop -->
+    <div class="content">
+        <h1 class="overskrift">Produkter</h1>
+        <div class="filter-column-desktop">
+            <h3>Sesong</h3>
+            <div class="filter-season">
+                <label class="filter-list">Vår<input class="checkmark" type="checkbox" value=""></span></label>
+                <label class="filter-list">Sommer<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Høst<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Vinter<input class="checkmark" type="checkbox" value=""></label>
+            </div>
+            <h3>Kjønn</h3>
+            <div class="filter-sex">
+                <label class="filter-list">Unisex<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Damer<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Herrer<input class="checkmark" type="checkbox" value=""></label>
+            </div>
+            <h3>Størrelse</h3>
+            <div class="filter-size">
+                <label class="filter-str">36<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">37<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">38<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">39<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">40<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">41<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">42<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">43<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">44<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">45<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">46<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">47<input class="checkmark" type="checkbox" value=""></label>
+            </div>
+        </div>
+        
+        <!-- Filterknapp for mobil - erstatter desktop filtersystemet når skjermen er mindre enn 800px -->
+        <input class="open-button" type="button" value="Endre Filter" onclick="return Filter(this);"/>
+        <div class="filter-column-mobile" id="myFilter">
+            <!-- Filter for mobil - dukker opp etter filter knappen er trykket-->
+            <h3>Sesong</h3>
+            <div class="filter-season">
+                <label class="filter-list">Vår<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Sommer<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Høst<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Vinter<input class="checkmark" type="checkbox" value=""></label>
+            </div>
+            <h3>Kjønn</h3>
+            <div class="filter-sex">
+                <label class="filter-list">Unisex<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Damer<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-list">Herrer<input class="checkmark" type="checkbox" value=""></label>
+            </div>
+            <h3>Størrelse</h3>
+            <div class="filter-size">
+                <label class="filter-str">36<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">37<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">38<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">39<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">40<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">41<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">42<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">43<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">44<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">45<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">46<input class="checkmark" type="checkbox" value=""></label>
+                <label class="filter-str">47<input class="checkmark" type="checkbox" value=""></label>
+            </div>
+        </div>
+
+        <!-- Produktkatalog -->
+        <div class="img-gallery">
+            <div class="produkt">
+                <a href="Produkter-klikk-1.html"><img class="produkt-bilde" src="Pictures/Nike sko hvit 1.webp" alt="Nike Air force 1"></a>
+                <p>Nike Air force 1</p>
+                <b>1000 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-2.html"><img class="produkt-bilde" src="Pictures/Adidas sko herre 1.webp" alt="Adidas Originals"></a>
+                <p>Adidas Originals</p>
+                <b>800 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-3.html"><img class="produkt-bilde" src="Pictures/Fila sko unisex 1.webp" alt="Fila Ventuno"></a>
+                <p>Fila Ventuno</p>
+                <b>500 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-4.html"><img class="produkt-bilde" src="Pictures/Dr martens sko 1.webp" alt="Dr. Martens 1460 Pascal"></a>
+                <p>Dr. Martens 1460 Pascal</p>
+                <b>1500 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-5.html"><img class="produkt-bilde" src="Pictures/Støvletter sko 1.webp" alt="York Boots"></a>
+                <p>York Boots</p>
+                <b>900 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-6.html"><img class="produkt-bilde" src="Pictures/pensko herre 1.webp" alt="Milan Boots"></a>
+                <p>Milan Boots</p>
+                <b>700 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-7.html"><img class="produkt-bilde" src="Pictures/pensko dame 1.webp" alt="Lerlie Shoes"></a>
+                <p>Lerlie Shoes</p>
+                <b>900 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-8.html"><img class="produkt-bilde" src="Pictures/pensko 2 herre 1.webp" alt="Thomas LA"></a>
+                <p>Thomas LA</p>
+                <b>1800 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-9.html"><img class="produkt-bilde" src="Pictures/pensko 2 dame 1.webp" alt="Stella Shoes"></a>
+                <p>Stella Shoes</p>
+                <b>400 kr</b>
+            </div>
+            <div class="produkt">
+                <a href="Produkter-klikk-10.html"><img class="produkt-bilde" src="Pictures/sandaler dame 1.webp" alt="Lola Montana Shoes"></a>
+                <p>Lola Montana Shoes</p>
+                <b>200 kr</b>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-elements">
+            <div id="Kundeservice">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="">Størrelseguide</a></li>
+                    <li><a href="">Ofte stilte spørsmål</a></li>
+                    <li><a href="">Reparering av sko</a></li>
+                </ul>
+            </div>
+            <div id="Kjøpsinformasjon">
+                <h3>Kjøpsinformasjon</h3>
+                <ul>
+                    <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
+                    <li><a href="">Retur</a></li>
+                    <li><a href="">Levering og frakt</a></li>
+                    <li><a href="">Reklamasjon og garanti</a></li>
+                </ul>
+            </div>
+            <div id="Melbosko">
+                <h3>Melbo sko</h3>
+                <ul>
+                    <li><a href="">KundeKlubb</a></li>
+                    <li><a href="">Medlemsfordeler</a></li>
+                    <li><a href="">Nyhetsbrev</a></li>
+                    <li><a href="">Ledige stillinger</a></li>
+                    <li><a href="personvernerklæring.html">Personvernerklæring</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

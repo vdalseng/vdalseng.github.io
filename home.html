@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Linker og funksjoner-->
+        <title>Melbo Sko AS</title>
+        <link rel="stylesheet" type="text/css" href="felles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <header>
+        <!--Info om netthandel hos Melbo Sko AS-->
+        <div class="netthandel-info">
+            <ul>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png">Trygg Handel og Rask Levering</b></li>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png">Personlig Service</b></li>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png">30 Dagers Åpent Kjøp</b></li>
+            </ul>
+        </div>
+    </header>
+    <!--------------------------------->
+            <!--Navigasjonsbar-->
+    <!--------------------------------->
+    <nav>
+        <div class="nav-innhold">
+            <div class="top-nav">
+                <!--Logo-->
+                <div>
+                    <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
+                </div>
+                <!--Øvre del av Navigasjonsbaren-->
+                <!--Login-Ønskeliste-Handlekurv-->
+                <ul class="login-onskeliste-handlekurv">
+                    <li><a href="login.html"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
+                    <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
+                    <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
+                </ul>
+                <!--Søkefelt-->
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="text" placeholder="Søk..." name="search">
+                        <button class="fa fa-search" style="float:right;"></button>
+                    </form>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="products.html">Produkter</a>
+                        <a href="about.html">Om oss</a>
+                        <a href="blog.html">Blogg</a>
+                        <a href="login.html">Login</a>
+                        <a href="#">Ønskeliste</a>
+                        <a href="#">Handlekurv</a>
+                    </div>
+                </div>
+                <div class="burger-btn">
+                    <span onclick="openNav()">&#9776;</span>
+                    <script src="burger-meny.js"></script>
+                </div>
+            </div>
+            <!--Nedre del av Navigasjonsbaren-->
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="blog.html">Blogg</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="innhold-forside">
+        <div class="nyheter" onclick="location.href='products.html'" style="cursor: pointer;">
+            <h1 class="banner-text">SALG 50%</h1>
+        </div>
+        <h1 class="overskrift">Skoene som er perfekte for deg!</h1>
+        <article class="img-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate efficitur dapibus. Quisque sapien est, convallis et odio sit amet, vulputate tristique est. Integer nec erat nunc. Nullam euismod quam urna, sit amet tincidunt purus auctor nec. Ut sagittis porta enim, eu tincidunt mauris elementum sed. </p>
+
+            <p>Curabitur eleifend tellus nisl, ut ultrices libero accumsan ac. Suspendisse porta tristique scelerisque. Quisque dolor tortor, mollis et justo sed, volutpat elementum libero. Cras bibendum semper neque, et luctus massa scelerisque vitae. Curabitur hendrerit, neque a porttitor tincidunt, orci turpis imperdiet nulla, at consequat urna justo at lacus.</p>
+
+            <!-- <p>Curabitur eleifend tellus nisl, ut ultrices libero accumsan ac. Suspendisse porta tristique scelerisque. Quisque dolor tortor, mollis et justo sed, volutpat elementum libero. Cras bibendum semper neque, et luctus massa scelerisque vitae. Curabitur hendrerit, neque a porttitor tincidunt, orci turpis imperdiet nulla, at consequat urna justo at lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate efficitur dapibus. Quisque sapien est, convallis et odio sit amet, vulputate tristique est. Integer nec erat nunc. Nullam euismod quam urna, sit amet tincidunt purus auctor nec. Ut sagittis porta enim, eu tincidunt mauris elementum sed. Curabitur eleifend tellus nisl, ut ultrices libero accumsan ac. Suspendisse porta tristique scelerisque. Quisque dolor tortor, mollis et justo sed, volutpat elementum libero. Cras bibendum semper neque, et luctus massa scelerisque vitae. Curabitur hendrerit, neque a porttitor tincidunt, orci turpis imperdiet nulla, at consequat urna justo at lacus.</p> -->
+            
+        </article>
+        <!--Bildet slideshow med tekst over -->
+        <!--slideshow container -->
+
+        <swiper-container class="mySwiper" keyboard="true" space-between="30" pagination="true" pagination-clickable="true" navigation="true">
+            <swiper-slide><a href="Produkter-klikk-6.html"><img src="Pictures/pensko herre 1.webp" class="slide-number"></a></swiper-slide>
+            <swiper-slide><a href="Produkter-klikk-9.html"><img src="Pictures/pensko 2 dame 1.webp" class="slide-number"></a></swiper-slide>
+            <swiper-slide><a href="Produkter-klikk-5.html"><img src="Pictures/Støvletter sko 1.webp" class="slide-number"></a></swiper-slide>
+            <swiper-slide><a href="Produkter-klikk-2.html"><img src="Pictures/Adidas sko herre 1.webp" class="slide-number"></a></swiper-slide>
+        </swiper-container>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    </div>
+
+    <footer>
+        <div class="footer-elements">
+            <div id="Kundeservice">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="">Størrelseguide</a></li>
+                    <li><a href="">Ofte stilte spørsmål</a></li>
+                    <li><a href="">Reparering av sko</a></li>
+                </ul>
+            </div>
+            <div id="Kjøpsinformasjon">
+                <h3>Kjøpsinformasjon</h3>
+                <ul>
+                    <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
+                    <li><a href="">Retur</a></li>
+                    <li><a href="">Levering og frakt</a></li>
+                    <li><a href="">Reklamasjon og garanti</a></li>
+                </ul>
+            </div>
+            <div id="Melbosko">
+                <h3>Melbo sko</h3>
+                <ul>
+                    <li><a href="">KundeKlubb</a></li>
+                    <li><a href="">Medlemsfordeler</a></li>
+                    <li><a href="">Nyhetsbrev</a></li>
+                    <li><a href="">Ledige stillinger</a></li>
+                    <li><a href="personvernerklæring.html">Personvernerklæring</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+            "background": "#252e39"
+            },
+            "button": {
+            "background": "#14a7d0"
+            }
+        },
+        "type": "opt-out",
+        "content": {
+        "message": "Vi bruker informasjonskapsler til å forbedre brukeropplevelsen. Se vår personvernerklæring eller for lenken for mer informasjon.",
+        "allow": "Det er greit!",
+        "deny": "Nei takk!",
+        "link": "Lær mer om informasjonskapsler",
+        "href": "https://www.cookiesandyou.com"
+        }
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    </body>
+</html>
