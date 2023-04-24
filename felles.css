@@ -1079,6 +1079,32 @@ input:focus{
     }
 }
 
+@media only screen and (max-height: 800px) {
+    .netthandel-info {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .login-onskeliste-handlekurv {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .logo {
+        width: 60px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .innlegg-linker iframe {
         width: 80%;
@@ -1240,7 +1266,7 @@ input:focus{
         margin-bottom: 10px;
        }
 
-       .innhold-personvernerklering {
+    .innhold-personvernerklering {
         width: 95%;
     }
 
