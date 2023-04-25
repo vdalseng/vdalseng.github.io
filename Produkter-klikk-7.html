@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Melbo Sko AS</title>
+        <title>Lerlie Shoes - Melbo Sko AS</title>
         <link rel="stylesheet" type="text/css" href="felles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="Pictures/melbo-logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -13,9 +14,9 @@
         <!--Info om netthandel hos Melbo Sko AS-->
         <div class="netthandel-info">
             <ul>
-                <li><b><img class="hakesymbol" src="Pictures/checkmark.png">Trygg Handel og Rask Levering</b></li>
-                <li><b><img class="hakesymbol" src="Pictures/checkmark.png">Personlig Service</b></li>
-                <li><b><img class="hakesymbol" src="Pictures/checkmark.png">30 Dagers Åpent Kjøp</b></li>
+                <li><b><img class="hakesymbol" src="Pictures/checkmark.png" alt="Hake">Trygg Handel og Rask Levering</b></li>
+                <li><b><img class="hakesymbol" src="Pictures/checkmark.png" alt="Hake">Personlig Service</b></li>
+                <li><b><img class="hakesymbol" src="Pictures/checkmark.png" alt="Hake">30 Dagers Åpent Kjøp</b></li>
             </ul>
         </div>
     </header>
@@ -33,9 +34,9 @@
                 <!--Login-Ønskeliste-Handlekurv-->
                 <div>
                     <ul class="login-onskeliste-handlekurv">
-                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
-                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
-                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/login-icon.png" alt="Logg inn"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/heart-icon.png" alt="Hjerte"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/basket-icon.png" alt="Handlekurv"></a></li>
                     </ul>
                 </div>
                 <!--Søkefelt-->
@@ -75,64 +76,69 @@
     </nav>
 
     <!-- produktbildene etter du har klikka -->
-    <div class=" et-produkt">
-        <div class="row">
-            <div class="col-2">
-                <img src="Pictures/pensko dame 1.webp" style="width: 340px;", height="100%" id="produktbilde">
-            </div>
-            <div class="col-2">
-                <div class="mindre-bilde-rad">
-                <div class="mindre-bilder-col">
-                    <img src="Pictures/pensko dame 1.webp" style="width:95%;" class="mindrebilde">
+    <div class="content-p">
+        <div class="column-left-p">
+            <div class="row-p">
+                <div class="storre-bilde">
+                    <img src="Pictures/pensko-dame-1.webp" id="produktbilde" alt="Lerlie Shoes bilde nummer 1">
                 </div>
-            
-                <div class="mindre-bilder-col">
-                    <img src="Pictures/pensko dame 2.webp" style="width:95%;" class="mindrebilde">
-                </div>
-            
-                <div class="mindre-bilder-col">
-                    <img src="Pictures/pensko dame 3.webp" style="width:95%;" class="mindrebilde">
-                </div>
-            
-                <div class="mindre-bilder-col">
-                    <img src="Pictures/pensko dame 4.webp" style="width:95%;" class="mindrebilde">
-                </div>
+                <div class="col-2">
+                    <div class="mindre-bilde-rad">
+                        <div class="mindre-bilder-col">
+                            <img src="Pictures/pensko-dame-1.webp" style="width:95%;" class="mindrebilde" alt="Lerlie Shoes bilde nummer 1">
+                        </div>
+                    
+                        <div class="mindre-bilder-col">
+                            <img src="Pictures/pensko-dame-2.webp" style="width:95%;" class="mindrebilde" alt="Lerlie Shoes bilde nummer 2">
+                        </div>
+                    
+                        <div class="mindre-bilder-col">
+                            <img src="Pictures/pensko-dame-3.webp" style="width:95%;" class="mindrebilde" alt="Lerlie Shoes bilde nummer 3">
+                        </div>
+                    
+                        <div class="mindre-bilder-col">
+                            <img src="Pictures/pensko-dame-4.webp" style="width:95%;" class="mindrebilde" alt="Lerlie Shoes bilde nummer 4">
+                        </div>
 
-                <div class="mindre-bilder-col">
-                    <img src="Pictures/pensko dame 5.webp" style="width:95%;" class="mindrebilde">
+                        <div class="mindre-bilder-col">
+                            <img src="Pictures/pensko-dame-5.webp" style="width:95%;" class="mindrebilde" alt="Lerlie Shoes bilde nummer 5">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>    
+            </div>    
+        </div>
+        <div class="column-right-p">
+            <p><a href="products.html">Produkter</a>/ Sko </p>
+            &nbsp;&nbsp;
+            <h1>Lerlie Shoes</h1>
+            &nbsp;&nbsp;
+            <h3>900 kr</h3>                          
+            <select>
+                <option>Velg Størrelse</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>44</option>
+                <option>45</option>
+                <option>46</option>
+                <option>47</option>
+            </select>
+            <br>
+            <input type="number" value="1" style="width:40px;">
+            <button class="button-1" role="button">Legg i handlekurv</button>
+            <button class="button-2" role="button">Legg i favoritter</button>
+            &nbsp;&nbsp;
+            <h3>Produktinformasjon</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>  
     </div>
-    <div class="col-2">
-        <p>Produkter/ Sko </p>
-        &nbsp;&nbsp;
-        <h1>Lerlie Shoes</h1>
-        &nbsp;&nbsp;
-        <h3>900 kr</h3>                          
-        <select>
-            <option>Velg Størrelse</option>
-            <option>36</option>
-            <option>37</option>
-            <option>38</option>
-            <option>39</option>
-            <option>40</option>
-            <option>41</option>
-            <option>42</option>
-            <option>43</option>
-            <option>44</option>
-            <option>44</option>
-            <option>45</option>
-            <option>46</option>
-            <option>47</option>
-        </select>
-        <input type="number" value="1"> <br> 
-        <br>
-        <button class="button-1" role="button">LEGG I HANDLEKURV</button> <br>
-        <button class="button-2" role="button">LEGG I FAVORITTER</button>
-        &nbsp;&nbsp;
-        <h3>Produktinformasjon</h3>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
          
     <footer>
         <div class="footer-elements">

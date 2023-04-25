@@ -54,7 +54,7 @@ nav {
     overflow: hidden;
     position: sticky;
     min-height: 70px;
-    top: -2px;
+    top: -1px;
     z-index: 2;
 }
 
@@ -827,7 +827,7 @@ input:focus{
 
 .innlegg-linker iframe {
     width: 40%;
-    height: 50vh;
+    height: 200vh;
     overflow: auto;
 }
 
