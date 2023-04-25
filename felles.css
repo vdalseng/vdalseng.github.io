@@ -285,8 +285,26 @@ nav input[type=text]{
     font-size: 1.2rem;
 }
 
-.subContainer button {
+.innloggingInfo {
+    text-align: left;
+}
+
+.subContainer {
+    text-align: center;
+}
+
+.loggInn {
     background-color: #9aa7c1;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 15px;
+    font-size: 1.2rem;
+}
+
+.bliMedlem {
+    background-color: #6b717e;
     color: white;
     padding: 15px;
     border-radius: 10px;
